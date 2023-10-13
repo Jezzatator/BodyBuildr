@@ -5,6 +5,7 @@
 //  Created by Jérémie - Ada on 12/10/2023.
 //
 
+import SwiftData
 import SwiftUI
 
 @main
@@ -13,5 +14,6 @@ struct BodyBuildrApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Exercice.self)
     }
 }

@@ -11,6 +11,13 @@
 		864F4A0A2AD8257B00E22C7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F4A092AD8257B00E22C7F /* ContentView.swift */; };
 		864F4A0C2AD8257D00E22C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864F4A0B2AD8257D00E22C7F /* Assets.xcassets */; };
 		864F4A0F2AD8257E00E22C7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864F4A0E2AD8257E00E22C7F /* Preview Assets.xcassets */; };
+		8693FEF42AD8261100A51E05 /* Exercice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FEF32AD8261100A51E05 /* Exercice.swift */; };
+		8693FEF62AD8261E00A51E05 /* SeanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FEF52AD8261E00A51E05 /* SeanceModel.swift */; };
+		8693FEFC2AD92E0E00A51E05 /* EditExcerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FEFB2AD92E0E00A51E05 /* EditExcerciseView.swift */; };
+		8693FF002AD93EB500A51E05 /* RowExerciceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FEFF2AD93EB500A51E05 /* RowExerciceView.swift */; };
+		8693FF022AD9782B00A51E05 /* AddExercice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FF012AD9782B00A51E05 /* AddExercice.swift */; };
+		8693FF042AD97D3E00A51E05 /* SelectTypExoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FF032AD97D3E00A51E05 /* SelectTypExoView.swift */; };
+		8693FF082AD987BA00A51E05 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FF072AD987BA00A51E05 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		864F4A092AD8257B00E22C7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		864F4A0B2AD8257D00E22C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		864F4A0E2AD8257E00E22C7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8693FEF32AD8261100A51E05 /* Exercice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice.swift; sourceTree = "<group>"; };
+		8693FEF52AD8261E00A51E05 /* SeanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeanceModel.swift; sourceTree = "<group>"; };
+		8693FEFB2AD92E0E00A51E05 /* EditExcerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditExcerciseView.swift; sourceTree = "<group>"; };
+		8693FEFF2AD93EB500A51E05 /* RowExerciceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowExerciceView.swift; sourceTree = "<group>"; };
+		8693FF012AD9782B00A51E05 /* AddExercice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExercice.swift; sourceTree = "<group>"; };
+		8693FF032AD97D3E00A51E05 /* SelectTypExoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypExoView.swift; sourceTree = "<group>"; };
+		8693FF072AD987BA00A51E05 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,9 @@
 		864F4A062AD8257B00E22C7F /* BodyBuildr */ = {
 			isa = PBXGroup;
 			children = (
+				8693FEF82AD92D8B00A51E05 /* ViewModel */,
+				8693FEF72AD92D8400A51E05 /* View */,
+				8693FEF22AD825F600A51E05 /* Model */,
 				864F4A072AD8257B00E22C7F /* BodyBuildrApp.swift */,
 				864F4A092AD8257B00E22C7F /* ContentView.swift */,
 				864F4A0B2AD8257D00E22C7F /* Assets.xcassets */,
@@ -65,6 +82,50 @@
 				864F4A0E2AD8257E00E22C7F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8693FEF22AD825F600A51E05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8693FEF32AD8261100A51E05 /* Exercice.swift */,
+				8693FEF52AD8261E00A51E05 /* SeanceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8693FEF72AD92D8400A51E05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8693FF062AD987AC00A51E05 /* Profile */,
+				8693FF052AD9879200A51E05 /* Dumbbell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8693FEF82AD92D8B00A51E05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8693FF052AD9879200A51E05 /* Dumbbell */ = {
+			isa = PBXGroup;
+			children = (
+				8693FEFB2AD92E0E00A51E05 /* EditExcerciseView.swift */,
+				8693FEFF2AD93EB500A51E05 /* RowExerciceView.swift */,
+				8693FF012AD9782B00A51E05 /* AddExercice.swift */,
+				8693FF032AD97D3E00A51E05 /* SelectTypExoView.swift */,
+			);
+			path = Dumbbell;
+			sourceTree = "<group>";
+		};
+		8693FF062AD987AC00A51E05 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8693FF072AD987BA00A51E05 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +198,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8693FEFC2AD92E0E00A51E05 /* EditExcerciseView.swift in Sources */,
+				8693FF082AD987BA00A51E05 /* ProfileView.swift in Sources */,
+				8693FEF62AD8261E00A51E05 /* SeanceModel.swift in Sources */,
+				8693FF042AD97D3E00A51E05 /* SelectTypExoView.swift in Sources */,
+				8693FF022AD9782B00A51E05 /* AddExercice.swift in Sources */,
+				8693FF002AD93EB500A51E05 /* RowExerciceView.swift in Sources */,
 				864F4A0A2AD8257B00E22C7F /* ContentView.swift in Sources */,
 				864F4A082AD8257B00E22C7F /* BodyBuildrApp.swift in Sources */,
+				8693FEF42AD8261100A51E05 /* Exercice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
