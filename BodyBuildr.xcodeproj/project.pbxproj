@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860FF2D22AE1597900BDB81E /* SeanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860FF2D12AE1597900BDB81E /* SeanceView.swift */; };
+		864D61AC2AE2AD240050AEE3 /* Bodybuildr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 864D61AA2AE2AD240050AEE3 /* Bodybuildr.xcdatamodeld */; };
+		864D61AE2AE2AE010050AEE3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864D61AD2AE2AE010050AEE3 /* DataController.swift */; };
 		864F4A082AD8257B00E22C7F /* BodyBuildrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F4A072AD8257B00E22C7F /* BodyBuildrApp.swift */; };
 		864F4A0A2AD8257B00E22C7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F4A092AD8257B00E22C7F /* ContentView.swift */; };
 		864F4A0C2AD8257D00E22C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864F4A0B2AD8257D00E22C7F /* Assets.xcassets */; };
@@ -18,9 +21,13 @@
 		8693FF022AD9782B00A51E05 /* AddExercice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FF012AD9782B00A51E05 /* AddExercice.swift */; };
 		8693FF042AD97D3E00A51E05 /* SelectTypExoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FF032AD97D3E00A51E05 /* SelectTypExoView.swift */; };
 		8693FF082AD987BA00A51E05 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FF072AD987BA00A51E05 /* ProfileView.swift */; };
+		86F83BC32AE1258A007D657B /* AddExerciceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F83BC22AE1258A007D657B /* AddExerciceVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		860FF2D12AE1597900BDB81E /* SeanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeanceView.swift; sourceTree = "<group>"; };
+		864D61AB2AE2AD240050AEE3 /* Bodybuildr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bodybuildr.xcdatamodel; sourceTree = "<group>"; };
+		864D61AD2AE2AE010050AEE3 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		864F4A042AD8257B00E22C7F /* BodyBuildr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyBuildr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		864F4A072AD8257B00E22C7F /* BodyBuildrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyBuildrApp.swift; sourceTree = "<group>"; };
 		864F4A092AD8257B00E22C7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +40,7 @@
 		8693FF012AD9782B00A51E05 /* AddExercice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExercice.swift; sourceTree = "<group>"; };
 		8693FF032AD97D3E00A51E05 /* SelectTypExoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypExoView.swift; sourceTree = "<group>"; };
 		8693FF072AD987BA00A51E05 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		86F83BC22AE1258A007D657B /* AddExerciceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciceVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 		864F49FB2AD8257B00E22C7F = {
 			isa = PBXGroup;
 			children = (
+				864D61AA2AE2AD240050AEE3 /* Bodybuildr.xcdatamodeld */,
 				864F4A062AD8257B00E22C7F /* BodyBuildr */,
 				864F4A052AD8257B00E22C7F /* Products */,
 			);
@@ -65,6 +74,7 @@
 		864F4A062AD8257B00E22C7F /* BodyBuildr */ = {
 			isa = PBXGroup;
 			children = (
+				864D61AD2AE2AE010050AEE3 /* DataController.swift */,
 				8693FEF82AD92D8B00A51E05 /* ViewModel */,
 				8693FEF72AD92D8400A51E05 /* View */,
 				8693FEF22AD825F600A51E05 /* Model */,
@@ -98,6 +108,7 @@
 			children = (
 				8693FF062AD987AC00A51E05 /* Profile */,
 				8693FF052AD9879200A51E05 /* Dumbbell */,
+				860FF2D12AE1597900BDB81E /* SeanceView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,6 +116,7 @@
 		8693FEF82AD92D8B00A51E05 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				86F83BC22AE1258A007D657B /* AddExerciceVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -200,12 +212,16 @@
 			files = (
 				8693FEFC2AD92E0E00A51E05 /* EditExcerciseView.swift in Sources */,
 				8693FF082AD987BA00A51E05 /* ProfileView.swift in Sources */,
+				86F83BC32AE1258A007D657B /* AddExerciceVM.swift in Sources */,
+				864D61AC2AE2AD240050AEE3 /* Bodybuildr.xcdatamodeld in Sources */,
 				8693FEF62AD8261E00A51E05 /* SeanceModel.swift in Sources */,
+				860FF2D22AE1597900BDB81E /* SeanceView.swift in Sources */,
 				8693FF042AD97D3E00A51E05 /* SelectTypExoView.swift in Sources */,
 				8693FF022AD9782B00A51E05 /* AddExercice.swift in Sources */,
 				8693FF002AD93EB500A51E05 /* RowExerciceView.swift in Sources */,
 				864F4A0A2AD8257B00E22C7F /* ContentView.swift in Sources */,
 				864F4A082AD8257B00E22C7F /* BodyBuildrApp.swift in Sources */,
+				864D61AE2AE2AE010050AEE3 /* DataController.swift in Sources */,
 				8693FEF42AD8261100A51E05 /* Exercice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +428,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		864D61AA2AE2AD240050AEE3 /* Bodybuildr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				864D61AB2AE2AD240050AEE3 /* Bodybuildr.xcdatamodel */,
+			);
+			currentVersion = 864D61AB2AE2AD240050AEE3 /* Bodybuildr.xcdatamodel */;
+			path = Bodybuildr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 864F49FC2AD8257B00E22C7F /* Project object */;
 }

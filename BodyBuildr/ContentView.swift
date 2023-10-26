@@ -9,20 +9,23 @@ import SwiftData
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.modelContext) var modelContext
-    @Query var excercices: [Exercice]
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var exercices: FetchedResults<Exercice>
     
     @State var type = ["Abdominaux", "Bras", "Dos", "Jambes", "Epaules", "Torse", "Cardio", "Etirements"]
+    
+//    @State var exercice: Exercice = Exercice(name: "Hola", type: "Bras", details: "GROSBRAS")
     
     var body: some View {
             TabView {
                 
-                SelectTypExoView(modelContext: _modelContext, _excercices: _excercices)
+                SelectTypExoView()
                     .tabItem {
                         Label("", systemImage: "dumbbell")
                     }
             
-                Text("TabView2")
+                //SeanceView(exercice: Bindable<exercice>)
+                Text("Test")
                     .tabItem {
                         Label("", systemImage: "doc.text.below.ecg")
                     }
@@ -43,8 +46,8 @@ struct ContentView: View {
                     .tabItem {
                         Label("", systemImage: "ellipsis")
                     }
-            }
                 .navigationTitle("BodyBuildr")
+                }
         }
     }
 

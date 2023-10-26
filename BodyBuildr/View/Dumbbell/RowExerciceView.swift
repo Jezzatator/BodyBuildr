@@ -9,8 +9,8 @@ import SwiftData
 import SwiftUI
 
 struct RowExerciceView: View {
-    @Environment(\.modelContext) var modelContext
-    @Query var exercices: [Exercice]
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var exercices: FetchedResults<Exercice>
 
     @Binding var typeExo: String
         
@@ -18,15 +18,24 @@ struct RowExerciceView: View {
             List {
                 ForEach(exercices) { exercice in
                     if exercice.type == typeExo {
+                        
+                        NavigationLink {
+                            Text("SeanceView")
+                            //SeanceView(exercice: exercice)
+                        } label: {
                         VStack(alignment: .leading) {
-                            Text(exercice.name)
+                            
+                            Text(exercice.name ?? "Unknwon")
                                 .font(.headline)
-                            Text(exercice.details)
+                            Text(exercice.details ?? "Unknwon")
                                 .font(.footnote)
                         }
                         .swipeActions(edge: .leading) {
-                            NavigationLink("Edit", destination: EditExcerciseView(exercice: exercice))
-                                .tint(.green)
+                                    if exercice.editable == true {
+                                        NavigationLink("Edit", destination: EditExcerciseView().environmentObject(exercice))
+                                            .tint(.green)
+                                    }
+                        }
                         }
                     }
                 }

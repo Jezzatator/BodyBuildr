@@ -9,10 +9,10 @@ import SwiftData
 import SwiftUI
 
 struct SelectTypExoView: View {
-    @Environment(\.modelContext) var modelContext
-    @Query var excercices: [Exercice]
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var exercices: FetchedResults<Exercice>
     
-    
+    @State var isPresented = false
     @State var searchText = ""
     @State var type = ["Abdominaux", "Bras", "Dos", "Jambes", "Epaules", "Torse", "Cardio", "Etirements"]
     
@@ -20,7 +20,7 @@ struct SelectTypExoView: View {
         NavigationStack {
             List {
                 NavigationLink {
-                    RowExerciceView(modelContext: _modelContext, typeExo: $type[0])
+                    RowExerciceView( typeExo: $type[0])
                 } label : {
                     HStack {
                         Image(systemName: "figure.core.training")
@@ -32,7 +32,7 @@ struct SelectTypExoView: View {
                 }
                 
                 NavigationLink {
-                    RowExerciceView(modelContext: _modelContext, typeExo: $type[1])
+                    RowExerciceView(typeExo: $type[1])
                 } label: {
                     HStack {
                         Image(systemName: "figure.play")
@@ -44,7 +44,7 @@ struct SelectTypExoView: View {
                 }
                 
                 NavigationLink {
-                    RowExerciceView(modelContext: _modelContext, typeExo: $type[2])
+                    RowExerciceView(typeExo: $type[2])
                 }label: {
                     HStack {
                         Image(systemName: "figure.rolling")
@@ -56,7 +56,7 @@ struct SelectTypExoView: View {
                 }
                 
                 NavigationLink {
-                    RowExerciceView(modelContext: _modelContext, typeExo: $type[3])
+                    RowExerciceView(typeExo: $type[3])
                 } label: {
                     HStack {
                         Image(systemName: "figure.highintensity.intervaltraining")
@@ -68,7 +68,7 @@ struct SelectTypExoView: View {
                 }
                 
                 NavigationLink {
-                    RowExerciceView(modelContext: _modelContext, typeExo: $type[4])
+                    RowExerciceView(typeExo: $type[4])
                 } label: {
                     HStack {
                         Image(systemName: "figure.strengthtraining.traditional")
@@ -80,7 +80,7 @@ struct SelectTypExoView: View {
                 }
                 
                 NavigationLink {
-                    RowExerciceView(modelContext: _modelContext, typeExo: $type[5])
+                    RowExerciceView(typeExo: $type[5])
                 } label: {
                     HStack {
                         Image(systemName: "figure.boxing")
@@ -92,7 +92,7 @@ struct SelectTypExoView: View {
                 }
                 
                 NavigationLink {
-                    RowExerciceView(modelContext: _modelContext, typeExo: $type[6])
+                    RowExerciceView(typeExo: $type[6])
                 } label: {
                     HStack {
                         Image(systemName: "figure.flexibility")
@@ -104,7 +104,7 @@ struct SelectTypExoView: View {
                 }
                 
                 NavigationLink {
-                    RowExerciceView(modelContext: _modelContext, typeExo: $type[7])
+                    RowExerciceView(typeExo: $type[7])
                 } label: {
                     HStack {
                         Image(systemName: "bolt.heart.fill")
@@ -116,7 +116,7 @@ struct SelectTypExoView: View {
                 }
                 
                 NavigationLink {
-                    AddExercice(modelContext: _modelContext)
+                    AddExercice()
                 } label: {
                     HStack {
                         Image(systemName: "plus.square.on.square")
@@ -125,12 +125,37 @@ struct SelectTypExoView: View {
                         Text("Excercices personalisés")
                     }
                     .padding(.vertical)
+                    .onTapGesture {
+                        isPresented = true
+                    }
                 }
             }
             .searchable(text: $searchText)
             .navigationTitle("BodyBuildr")
-
+            .toolbar {
+                Button("Add Sample") {
+                    addSample()
+                }
+            }
         }
+    }
+    
+    func addSample() {
+        let names = ["Officia", "Magna", "Magna officia", "Lorem velit", "Minim", "Laborum", "Ea sint", "Fugiat", "Consequat", "Duis", "Aliquip"]
+        
+        let chosenName = names.randomElement()!
+        let chosenType = type.randomElement()!
+        let chosenDetails = "Excepteur labore sit sed minim consectetur nulla nisi consequat labore in culpa culpa."
+        
+        let exercice = Exercice(context: moc)
+        exercice.id = UUID()
+        exercice.name = "\(chosenName)"
+        exercice.type = "\(chosenType)"
+        exercice.details = chosenDetails
+        exercice.editable = false
+        
+        try? moc.save()
+        
     }
 }
 
