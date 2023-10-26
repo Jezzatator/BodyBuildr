@@ -21,11 +21,15 @@
 		8693FF022AD9782B00A51E05 /* AddExercice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FF012AD9782B00A51E05 /* AddExercice.swift */; };
 		8693FF042AD97D3E00A51E05 /* SelectTypExoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FF032AD97D3E00A51E05 /* SelectTypExoView.swift */; };
 		8693FF082AD987BA00A51E05 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FF072AD987BA00A51E05 /* ProfileView.swift */; };
+		86AEC76B2AEA9850000EB946 /* Seance+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC7672AEA9850000EB946 /* Seance+CoreDataClass.swift */; };
+		86AEC76C2AEA9850000EB946 /* Seance+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC7682AEA9850000EB946 /* Seance+CoreDataProperties.swift */; };
+		86AEC76D2AEA9850000EB946 /* Exercice+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC7692AEA9850000EB946 /* Exercice+CoreDataClass.swift */; };
+		86AEC76E2AEA9850000EB946 /* Exercice+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC76A2AEA9850000EB946 /* Exercice+CoreDataProperties.swift */; };
 		86F83BC32AE1258A007D657B /* AddExerciceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F83BC22AE1258A007D657B /* AddExerciceVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		860FF2D12AE1597900BDB81E /* SeanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeanceView.swift; sourceTree = "<group>"; };
+		860FF2D12AE1597900BDB81E /* SeanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeanceView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		864D61AB2AE2AD240050AEE3 /* Bodybuildr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bodybuildr.xcdatamodel; sourceTree = "<group>"; };
 		864D61AD2AE2AE010050AEE3 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		864F4A042AD8257B00E22C7F /* BodyBuildr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyBuildr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +44,10 @@
 		8693FF012AD9782B00A51E05 /* AddExercice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExercice.swift; sourceTree = "<group>"; };
 		8693FF032AD97D3E00A51E05 /* SelectTypExoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypExoView.swift; sourceTree = "<group>"; };
 		8693FF072AD987BA00A51E05 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		86AEC7672AEA9850000EB946 /* Seance+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Seance+CoreDataClass.swift"; sourceTree = "<group>"; };
+		86AEC7682AEA9850000EB946 /* Seance+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Seance+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		86AEC7692AEA9850000EB946 /* Exercice+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercice+CoreDataClass.swift"; sourceTree = "<group>"; };
+		86AEC76A2AEA9850000EB946 /* Exercice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercice+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		86F83BC22AE1258A007D657B /* AddExerciceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciceVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +82,6 @@
 		864F4A062AD8257B00E22C7F /* BodyBuildr */ = {
 			isa = PBXGroup;
 			children = (
-				864D61AD2AE2AE010050AEE3 /* DataController.swift */,
 				8693FEF82AD92D8B00A51E05 /* ViewModel */,
 				8693FEF72AD92D8400A51E05 /* View */,
 				8693FEF22AD825F600A51E05 /* Model */,
@@ -97,6 +104,8 @@
 		8693FEF22AD825F600A51E05 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				864D61AD2AE2AE010050AEE3 /* DataController.swift */,
+				86AEC75E2AEA9624000EB946 /* CoreDataNSManag */,
 				8693FEF32AD8261100A51E05 /* Exercice.swift */,
 				8693FEF52AD8261E00A51E05 /* SeanceModel.swift */,
 			);
@@ -138,6 +147,17 @@
 				8693FF072AD987BA00A51E05 /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		86AEC75E2AEA9624000EB946 /* CoreDataNSManag */ = {
+			isa = PBXGroup;
+			children = (
+				86AEC7672AEA9850000EB946 /* Seance+CoreDataClass.swift */,
+				86AEC7682AEA9850000EB946 /* Seance+CoreDataProperties.swift */,
+				86AEC7692AEA9850000EB946 /* Exercice+CoreDataClass.swift */,
+				86AEC76A2AEA9850000EB946 /* Exercice+CoreDataProperties.swift */,
+			);
+			path = CoreDataNSManag;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86AEC76B2AEA9850000EB946 /* Seance+CoreDataClass.swift in Sources */,
 				8693FEFC2AD92E0E00A51E05 /* EditExcerciseView.swift in Sources */,
 				8693FF082AD987BA00A51E05 /* ProfileView.swift in Sources */,
+				86AEC76D2AEA9850000EB946 /* Exercice+CoreDataClass.swift in Sources */,
+				86AEC76C2AEA9850000EB946 /* Seance+CoreDataProperties.swift in Sources */,
+				86AEC76E2AEA9850000EB946 /* Exercice+CoreDataProperties.swift in Sources */,
 				86F83BC32AE1258A007D657B /* AddExerciceVM.swift in Sources */,
 				864D61AC2AE2AD240050AEE3 /* Bodybuildr.xcdatamodeld in Sources */,
 				8693FEF62AD8261E00A51E05 /* SeanceModel.swift in Sources */,

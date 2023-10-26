@@ -20,8 +20,7 @@ struct RowExerciceView: View {
                     if exercice.type == typeExo {
                         
                         NavigationLink {
-                            Text("SeanceView")
-                            //SeanceView(exercice: exercice)
+                            SeanceView().environmentObject(exercice)
                         } label: {
                         VStack(alignment: .leading) {
                             

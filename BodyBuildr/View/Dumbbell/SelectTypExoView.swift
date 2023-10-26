@@ -14,7 +14,7 @@ struct SelectTypExoView: View {
     
     @State var isPresented = false
     @State var searchText = ""
-    @State var type = ["Abdominaux", "Bras", "Dos", "Jambes", "Epaules", "Torse", "Cardio", "Etirements"]
+    @State var type = ["Abdominaux", "Bras", "Dos", "Jambes", "Epaules", "Torse", "Etirements", "Cardio"]
     
     var body: some View {
         NavigationStack {
