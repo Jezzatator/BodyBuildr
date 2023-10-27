@@ -11,10 +11,10 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var exercices: FetchedResults<Exercice>
+
     
     @State var type = ["Abdominaux", "Bras", "Dos", "Jambes", "Epaules", "Torse", "Cardio", "Etirements"]
-    
-//    @State var exercice: Exercice = Exercice(name: "Hola", type: "Bras", details: "GROSBRAS")
+
     
     var body: some View {
             TabView {
@@ -48,7 +48,37 @@ struct ContentView: View {
                     }
                 .navigationTitle("BodyBuildr")
                 }
+            .onAppear {
+                isEmptyEx()
+            }
         }
+    
+    func isEmptyEx() {
+        if exercices.isEmpty {
+            addSample()
+            print("is Empty, Samples was added")
+        } else {
+            print("Not Empty, no Samples added")
+        }
+    }
+    
+    func addSample() {
+        let names = ["Officia", "Magna", "Magna officia", "Lorem velit", "Minim", "Laborum", "Ea sint", "Fugiat", "Consequat", "Duis", "Aliquip"]
+        
+        let chosenName = names.randomElement()!
+        let chosenType = type.randomElement()!
+        let chosenDetails = "Excepteur labore sit sed minim consectetur nulla nisi consequat labore in culpa culpa."
+        
+        let exercice = Exercice(context: moc)
+        exercice.id = UUID()
+        exercice.name = "\(chosenName)"
+        exercice.type = "\(chosenType)"
+        exercice.details = chosenDetails
+        exercice.editable = false
+        
+        try? moc.save()
+        
+    }
     }
 
 #Preview {

@@ -132,30 +132,7 @@ struct SelectTypExoView: View {
             }
             .searchable(text: $searchText)
             .navigationTitle("BodyBuildr")
-            .toolbar {
-                Button("Add Sample") {
-                    addSample()
-                }
-            }
         }
-    }
-    
-    func addSample() {
-        let names = ["Officia", "Magna", "Magna officia", "Lorem velit", "Minim", "Laborum", "Ea sint", "Fugiat", "Consequat", "Duis", "Aliquip"]
-        
-        let chosenName = names.randomElement()!
-        let chosenType = type.randomElement()!
-        let chosenDetails = "Excepteur labore sit sed minim consectetur nulla nisi consequat labore in culpa culpa."
-        
-        let exercice = Exercice(context: moc)
-        exercice.id = UUID()
-        exercice.name = "\(chosenName)"
-        exercice.type = "\(chosenType)"
-        exercice.details = chosenDetails
-        exercice.editable = false
-        
-        try? moc.save()
-        
     }
 }
 

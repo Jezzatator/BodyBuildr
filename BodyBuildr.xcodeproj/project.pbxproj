@@ -14,6 +14,18 @@
 		864F4A0A2AD8257B00E22C7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F4A092AD8257B00E22C7F /* ContentView.swift */; };
 		864F4A0C2AD8257D00E22C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864F4A0B2AD8257D00E22C7F /* Assets.xcassets */; };
 		864F4A0F2AD8257E00E22C7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864F4A0E2AD8257E00E22C7F /* Preview Assets.xcassets */; };
+		8659DE952AEBA1E700368263 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8659DE942AEBA1E700368263 /* Set.swift */; };
+		8659DE972AEBA3F000368263 /* AddSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8659DE962AEBA3F000368263 /* AddSet.swift */; };
+		8659DEAA2AEBAFDF00368263 /* exercices.json in Resources */ = {isa = PBXBuildFile; fileRef = 8659DEA92AEBAFDF00368263 /* exercices.json */; };
+		8659DEE72AEBD02B00368263 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8659DEE92AEBD02B00368263 /* Localizable.strings */; };
+		8659DEF42AEBE33200368263 /* Set+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8659DEEC2AEBE33200368263 /* Set+CoreDataClass.swift */; };
+		8659DEF52AEBE33200368263 /* Set+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8659DEED2AEBE33200368263 /* Set+CoreDataProperties.swift */; };
+		8659DEF62AEBE33200368263 /* Exercice+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8659DEEE2AEBE33200368263 /* Exercice+CoreDataClass.swift */; };
+		8659DEF72AEBE33200368263 /* Exercice+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8659DEEF2AEBE33200368263 /* Exercice+CoreDataProperties.swift */; };
+		8659DEF82AEBE33200368263 /* Muscle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8659DEF02AEBE33200368263 /* Muscle+CoreDataClass.swift */; };
+		8659DEF92AEBE33200368263 /* Muscle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8659DEF12AEBE33200368263 /* Muscle+CoreDataProperties.swift */; };
+		8659DEFA2AEBE33200368263 /* Seance+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8659DEF22AEBE33200368263 /* Seance+CoreDataClass.swift */; };
+		8659DEFB2AEBE33200368263 /* Seance+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8659DEF32AEBE33200368263 /* Seance+CoreDataProperties.swift */; };
 		8693FEF42AD8261100A51E05 /* Exercice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FEF32AD8261100A51E05 /* Exercice.swift */; };
 		8693FEF62AD8261E00A51E05 /* SeanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FEF52AD8261E00A51E05 /* SeanceModel.swift */; };
 		8693FEFC2AD92E0E00A51E05 /* EditExcerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FEFB2AD92E0E00A51E05 /* EditExcerciseView.swift */; };
@@ -21,10 +33,6 @@
 		8693FF022AD9782B00A51E05 /* AddExercice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FF012AD9782B00A51E05 /* AddExercice.swift */; };
 		8693FF042AD97D3E00A51E05 /* SelectTypExoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FF032AD97D3E00A51E05 /* SelectTypExoView.swift */; };
 		8693FF082AD987BA00A51E05 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693FF072AD987BA00A51E05 /* ProfileView.swift */; };
-		86AEC76B2AEA9850000EB946 /* Seance+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC7672AEA9850000EB946 /* Seance+CoreDataClass.swift */; };
-		86AEC76C2AEA9850000EB946 /* Seance+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC7682AEA9850000EB946 /* Seance+CoreDataProperties.swift */; };
-		86AEC76D2AEA9850000EB946 /* Exercice+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC7692AEA9850000EB946 /* Exercice+CoreDataClass.swift */; };
-		86AEC76E2AEA9850000EB946 /* Exercice+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEC76A2AEA9850000EB946 /* Exercice+CoreDataProperties.swift */; };
 		86F83BC32AE1258A007D657B /* AddExerciceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F83BC22AE1258A007D657B /* AddExerciceVM.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +45,19 @@
 		864F4A092AD8257B00E22C7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		864F4A0B2AD8257D00E22C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		864F4A0E2AD8257E00E22C7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8659DE942AEBA1E700368263 /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		8659DE962AEBA3F000368263 /* AddSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSet.swift; sourceTree = "<group>"; };
+		8659DEA92AEBAFDF00368263 /* exercices.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercices.json; sourceTree = "<group>"; };
+		8659DEEA2AEBD04C00368263 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8659DEEB2AEBD0CF00368263 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8659DEEC2AEBE33200368263 /* Set+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8659DEED2AEBE33200368263 /* Set+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8659DEEE2AEBE33200368263 /* Exercice+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercice+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8659DEEF2AEBE33200368263 /* Exercice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercice+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8659DEF02AEBE33200368263 /* Muscle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Muscle+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8659DEF12AEBE33200368263 /* Muscle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Muscle+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8659DEF22AEBE33200368263 /* Seance+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Seance+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8659DEF32AEBE33200368263 /* Seance+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Seance+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8693FEF32AD8261100A51E05 /* Exercice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice.swift; sourceTree = "<group>"; };
 		8693FEF52AD8261E00A51E05 /* SeanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeanceModel.swift; sourceTree = "<group>"; };
 		8693FEFB2AD92E0E00A51E05 /* EditExcerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditExcerciseView.swift; sourceTree = "<group>"; };
@@ -44,10 +65,6 @@
 		8693FF012AD9782B00A51E05 /* AddExercice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExercice.swift; sourceTree = "<group>"; };
 		8693FF032AD97D3E00A51E05 /* SelectTypExoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypExoView.swift; sourceTree = "<group>"; };
 		8693FF072AD987BA00A51E05 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		86AEC7672AEA9850000EB946 /* Seance+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Seance+CoreDataClass.swift"; sourceTree = "<group>"; };
-		86AEC7682AEA9850000EB946 /* Seance+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Seance+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		86AEC7692AEA9850000EB946 /* Exercice+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercice+CoreDataClass.swift"; sourceTree = "<group>"; };
-		86AEC76A2AEA9850000EB946 /* Exercice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercice+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		86F83BC22AE1258A007D657B /* AddExerciceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciceVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,11 +99,12 @@
 		864F4A062AD8257B00E22C7F /* BodyBuildr */ = {
 			isa = PBXGroup;
 			children = (
+				864F4A072AD8257B00E22C7F /* BodyBuildrApp.swift */,
+				864F4A092AD8257B00E22C7F /* ContentView.swift */,
+				8659DEA82AEBAF9E00368263 /* Utilities */,
 				8693FEF82AD92D8B00A51E05 /* ViewModel */,
 				8693FEF72AD92D8400A51E05 /* View */,
 				8693FEF22AD825F600A51E05 /* Model */,
-				864F4A072AD8257B00E22C7F /* BodyBuildrApp.swift */,
-				864F4A092AD8257B00E22C7F /* ContentView.swift */,
 				864F4A0B2AD8257D00E22C7F /* Assets.xcassets */,
 				864F4A0D2AD8257E00E22C7F /* Preview Content */,
 			);
@@ -99,6 +117,33 @@
 				864F4A0E2AD8257E00E22C7F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8659DE922AEBA17F00368263 /* SeanceView */ = {
+			isa = PBXGroup;
+			children = (
+				860FF2D12AE1597900BDB81E /* SeanceView.swift */,
+				8659DE932AEBA18F00368263 /* Set */,
+			);
+			path = SeanceView;
+			sourceTree = "<group>";
+		};
+		8659DE932AEBA18F00368263 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				8659DE942AEBA1E700368263 /* Set.swift */,
+				8659DE962AEBA3F000368263 /* AddSet.swift */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		8659DEA82AEBAF9E00368263 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8659DEE92AEBD02B00368263 /* Localizable.strings */,
+				8659DEA92AEBAFDF00368263 /* exercices.json */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		8693FEF22AD825F600A51E05 /* Model */ = {
@@ -115,9 +160,9 @@
 		8693FEF72AD92D8400A51E05 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8659DE922AEBA17F00368263 /* SeanceView */,
 				8693FF062AD987AC00A51E05 /* Profile */,
 				8693FF052AD9879200A51E05 /* Dumbbell */,
-				860FF2D12AE1597900BDB81E /* SeanceView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,10 +197,14 @@
 		86AEC75E2AEA9624000EB946 /* CoreDataNSManag */ = {
 			isa = PBXGroup;
 			children = (
-				86AEC7672AEA9850000EB946 /* Seance+CoreDataClass.swift */,
-				86AEC7682AEA9850000EB946 /* Seance+CoreDataProperties.swift */,
-				86AEC7692AEA9850000EB946 /* Exercice+CoreDataClass.swift */,
-				86AEC76A2AEA9850000EB946 /* Exercice+CoreDataProperties.swift */,
+				8659DEEC2AEBE33200368263 /* Set+CoreDataClass.swift */,
+				8659DEED2AEBE33200368263 /* Set+CoreDataProperties.swift */,
+				8659DEEE2AEBE33200368263 /* Exercice+CoreDataClass.swift */,
+				8659DEEF2AEBE33200368263 /* Exercice+CoreDataProperties.swift */,
+				8659DEF02AEBE33200368263 /* Muscle+CoreDataClass.swift */,
+				8659DEF12AEBE33200368263 /* Muscle+CoreDataProperties.swift */,
+				8659DEF22AEBE33200368263 /* Seance+CoreDataClass.swift */,
+				8659DEF32AEBE33200368263 /* Seance+CoreDataProperties.swift */,
 			);
 			path = CoreDataNSManag;
 			sourceTree = "<group>";
@@ -197,11 +246,12 @@
 			};
 			buildConfigurationList = 864F49FF2AD8257B00E22C7F /* Build configuration list for PBXProject "BodyBuildr" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = fr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 864F49FB2AD8257B00E22C7F;
 			productRefGroup = 864F4A052AD8257B00E22C7F /* Products */;
@@ -218,6 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8659DEAA2AEBAFDF00368263 /* exercices.json in Resources */,
+				8659DEE72AEBD02B00368263 /* Localizable.strings in Resources */,
 				864F4A0F2AD8257E00E22C7F /* Preview Assets.xcassets in Resources */,
 				864F4A0C2AD8257D00E22C7F /* Assets.xcassets in Resources */,
 			);
@@ -230,19 +282,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86AEC76B2AEA9850000EB946 /* Seance+CoreDataClass.swift in Sources */,
+				8659DEFA2AEBE33200368263 /* Seance+CoreDataClass.swift in Sources */,
 				8693FEFC2AD92E0E00A51E05 /* EditExcerciseView.swift in Sources */,
 				8693FF082AD987BA00A51E05 /* ProfileView.swift in Sources */,
-				86AEC76D2AEA9850000EB946 /* Exercice+CoreDataClass.swift in Sources */,
-				86AEC76C2AEA9850000EB946 /* Seance+CoreDataProperties.swift in Sources */,
-				86AEC76E2AEA9850000EB946 /* Exercice+CoreDataProperties.swift in Sources */,
+				8659DEF72AEBE33200368263 /* Exercice+CoreDataProperties.swift in Sources */,
+				8659DEFB2AEBE33200368263 /* Seance+CoreDataProperties.swift in Sources */,
+				8659DEF42AEBE33200368263 /* Set+CoreDataClass.swift in Sources */,
+				8659DEF62AEBE33200368263 /* Exercice+CoreDataClass.swift in Sources */,
 				86F83BC32AE1258A007D657B /* AddExerciceVM.swift in Sources */,
 				864D61AC2AE2AD240050AEE3 /* Bodybuildr.xcdatamodeld in Sources */,
+				8659DE952AEBA1E700368263 /* Set.swift in Sources */,
 				8693FEF62AD8261E00A51E05 /* SeanceModel.swift in Sources */,
+				8659DE972AEBA3F000368263 /* AddSet.swift in Sources */,
+				8659DEF92AEBE33200368263 /* Muscle+CoreDataProperties.swift in Sources */,
+				8659DEF82AEBE33200368263 /* Muscle+CoreDataClass.swift in Sources */,
 				860FF2D22AE1597900BDB81E /* SeanceView.swift in Sources */,
 				8693FF042AD97D3E00A51E05 /* SelectTypExoView.swift in Sources */,
 				8693FF022AD9782B00A51E05 /* AddExercice.swift in Sources */,
 				8693FF002AD93EB500A51E05 /* RowExerciceView.swift in Sources */,
+				8659DEF52AEBE33200368263 /* Set+CoreDataProperties.swift in Sources */,
 				864F4A0A2AD8257B00E22C7F /* ContentView.swift in Sources */,
 				864F4A082AD8257B00E22C7F /* BodyBuildrApp.swift in Sources */,
 				864D61AE2AE2AE010050AEE3 /* DataController.swift in Sources */,
@@ -252,12 +310,26 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		8659DEE92AEBD02B00368263 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8659DEEA2AEBD04C00368263 /* fr */,
+				8659DEEB2AEBD0CF00368263 /* en */,
+			);
+			name = Localizable.strings;
+			path = Localize;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		864F4A102AD8257E00E22C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -321,6 +393,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

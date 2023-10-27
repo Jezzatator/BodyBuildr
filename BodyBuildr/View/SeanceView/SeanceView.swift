@@ -12,7 +12,7 @@ struct SeanceView: View {
     @Environment(\.modelContext) var modelContext
     @FetchRequest(sortDescriptors: []) var seances: FetchedResults<Seance>
     
-    @EnvironmentObject var exercice: ExerciceMock
+    @EnvironmentObject var exercice: Exercice
     
     @State var weigth = ""
     @State var weigthType = "kg"
@@ -142,7 +142,7 @@ struct SeanceView: View {
                                         VStack(alignment: .center) {
                                             Text("14")
                                             Text("rep")
-                                            Text("12/10")
+                                            Text("25/10")
                                         }
                                         .font(.caption)
                                         .foregroundColor(.gray)
@@ -161,7 +161,7 @@ struct SeanceView: View {
                                         VStack(alignment: .center) {
                                             Text("20")
                                             Text("kg")
-                                            Text("12/10")
+                                            Text("25/10")
                                         }
                                         .font(.caption)
                                         .foregroundColor(.gray)
@@ -196,7 +196,7 @@ struct SeanceView: View {
                                         VStack(alignment: .center) {
                                             Text("12")
                                             Text("rep")
-                                            Text("12/10")
+                                            Text("25/10")
                                         }
                                         .font(.caption)
                                         .foregroundColor(.gray)
@@ -215,7 +215,7 @@ struct SeanceView: View {
                                         VStack(alignment: .center) {
                                             Text("20")
                                             Text("kg")
-                                            Text("12/10")
+                                            Text("25/10")
                                         }
                                         .font(.caption)
                                         .foregroundColor(.gray)
@@ -251,7 +251,7 @@ struct SeanceView: View {
                                         VStack(alignment: .center) {
                                             Text("12")
                                             Text("rep")
-                                            Text("12/10")
+                                            Text("25/10")
                                         }
                                         .font(.caption)
                                         .foregroundColor(.gray)
@@ -270,7 +270,7 @@ struct SeanceView: View {
                                         VStack(alignment: .center) {
                                             Text("20")
                                             Text("kg")
-                                            Text("12/10")
+                                            Text("25/10")
                                         }
                                         .font(.caption)
                                         .foregroundColor(.gray)
@@ -304,7 +304,7 @@ struct SeanceView: View {
                                             VStack(alignment: .center) {
                                                 Text("20")
                                                 Text("rep")
-                                                Text("12/10")
+                                                Text("25/10")
                                             }
                                             .font(.caption)
                                             .foregroundColor(.gray)
@@ -323,7 +323,7 @@ struct SeanceView: View {
                                             VStack(alignment: .center) {
                                                 Text("20")
                                                 Text("kg")
-                                                Text("12/10")
+                                                Text("25/10")
                                             }
                                             .font(.caption)
                                             .foregroundColor(.gray)

@@ -2,7 +2,7 @@
 //  Exercice+CoreDataClass.swift
 //  BodyBuildr
 //
-//  Created by Jérémie - Ada on 26/10/2023.
+//  Created by Jérémie - Ada on 27/10/2023.
 //
 //
 

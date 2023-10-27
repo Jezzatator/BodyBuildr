@@ -2,7 +2,7 @@
 //  Exercice+CoreDataProperties.swift
 //  BodyBuildr
 //
-//  Created by Jérémie - Ada on 26/10/2023.
+//  Created by Jérémie - Ada on 27/10/2023.
 //
 //
 
@@ -21,6 +21,24 @@ extension Exercice {
     @NSManaged public var id: UUID?
     @NSManaged public var name: String?
     @NSManaged public var type: String?
+    @NSManaged public var muscle: NSSet?
+
+}
+
+// MARK: Generated accessors for muscle
+extension Exercice {
+
+    @objc(addMuscleObject:)
+    @NSManaged public func addToMuscle(_ value: Muscle)
+
+    @objc(removeMuscleObject:)
+    @NSManaged public func removeFromMuscle(_ value: Muscle)
+
+    @objc(addMuscle:)
+    @NSManaged public func addToMuscle(_ values: NSSet)
+
+    @objc(removeMuscle:)
+    @NSManaged public func removeFromMuscle(_ values: NSSet)
 
 }
 
