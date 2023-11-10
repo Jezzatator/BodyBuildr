@@ -14,8 +14,8 @@ BodyBuildr est une application de suivi d'entraînement développée en Swift et
 ## Pour Commencer
 
 ### Prérequis
-Xcode (version X.X ou ultérieure)
-Swift (version X.X ou ultérieure)
+Xcode (version 15.0.1 ou ultérieure)
+Swift (version 17.0 ou ultérieure)
 
 ### Installation
 Clonez le dépôt : 
